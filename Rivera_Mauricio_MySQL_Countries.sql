@@ -89,6 +89,6 @@ Tu consulta debe organizar el resultado por el número de ciudades en orden desc
  Además, la consulta debe organizar el resultado por el número de países en orden descendente. (2)
  */
  
- SELECT region, COUNT(name) FROM country
+ SELECT region AS Nombre_Región, COUNT(name) AS Cantidad_Paises FROM country
  GROUP BY region ORDER BY COUNT(name) DESC;
  
